@@ -6,7 +6,7 @@
 /*general elements*/
 .action-button{
     width: fit-content;
-    height: 50px;
+    height: 40px;
     background-color: #1c1c1c;
     border-radius: 100px;
     color: white;
@@ -44,13 +44,13 @@
     min-height: 85vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .myPicture{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     background: white;
     border-radius: 50%;
-    margin-left: 40px;
     background: url(../images/mypic.png);
     background-position: center;
     background-size: cover;
@@ -59,5 +59,89 @@
 .myPicture .action-button{
     position: absolute;
     top: 45%;
-    right: -150px;
+    right: -170px;
+}
+.wave-icon{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    animation:  waveHand 1s linear infinite;
+    cursor: pointer;
+}
+@keyframes waveHand {
+    0% {
+        transform: rotate(0deg); /* Start from a neutral position */
+        
+    }
+    25% {
+        transform: rotate(15deg); /* Rotate forward */
+    }
+    50% {
+        transform: rotate(0deg); /* Back to neutral */
+    }
+    75% {
+        transform: rotate(-15deg); /* Rotate backward */
+    }
+    100% {
+        transform: rotate(0deg); /* Back to neutral */
+    }
+}
+.hero-section2{
+    width: 50%;
+    margin-left: 200px;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+}
+.hero-section2 p{
+    background: linear-gradient(100deg, #1c1c1c, #1c1c1c); /* Gradient colors */
+      -webkit-background-clip: text; /* For WebKit browsers */
+      -webkit-text-fill-color: transparent; /* Makes text transparent to show the background */
+      background-clip: text; /* Standard property */
+      color: transparent; /* Standard property to make text transparent */
+}
+.hero-section2 .github-icon{
+    transform: scale(0.6);
+    color: #1c1c1c;
+}
+.scroll-down-wrapper{
+    position: absolute;
+    bottom: 60px;
+
+}
+.scroll-down-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0.7px solid #1c1c1c;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:  movedownAnimation 2.5s linear infinite 2s;
+    cursor: pointer;
+}
+.downArrow{
+    animation:  upDownAnimation 0.7s ease-in-out infinite;
+    
+}
+@keyframes upDownAnimation {
+    25%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.projects-section-wrapper{
+    min-height: 60vh;
+}
+.section-title-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
 }

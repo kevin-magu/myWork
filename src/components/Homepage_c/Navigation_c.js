@@ -5,7 +5,7 @@ function Navigation_c() {
   return (
     <div>
         <nav className='navigation-wrapper'>
-            <ActionButton />
+            <ActionButton actionButtonConetent="info.kevin.co.ke" />
             <ul>
               <li>Home</li>
               <li>Projects</li>

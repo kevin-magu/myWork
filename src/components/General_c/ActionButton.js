@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ActionButton() {
+function ActionButton({actionButtonConetent}) {
   return (
     <div>
-      <div className='action-button'>info.kevin.co.ke</div>
+      <div className='action-button'>{actionButtonConetent}</div>
     </div>
   )
 }
