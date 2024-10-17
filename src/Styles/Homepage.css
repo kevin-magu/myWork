@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*general elements*/
+.action-button{
+    width: fit-content;
+    height: 50px;
+    background-color: #1c1c1c;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px 0 25px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.homepage-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: #1c1c1c;
+    
+}
+.navigation-wrapper ul{
+    display: flex;
+    font-weight: bold;
+}
+.navigation-wrapper ul li{
+    margin-right: 40px;
+    list-style: none;
+}
+
+.hero-section-wrapper{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+.myPicture{
+    width: 350px;
+    height: 350px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 40px;
+    background: url(../images/mypic.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.myPicture .action-button{
+    position: absolute;
+    top: 45%;
+    right: -150px;
+}
