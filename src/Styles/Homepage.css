@@ -10,6 +10,13 @@
     flex-direction: column;
 }
 
+.hero-section-wrapper{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .myPicture{
     width: 300px;
     height: 300px;
@@ -52,7 +59,6 @@
 }
 .hero-section2{
     width: 50%;
-    margin-left: 200px;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -71,7 +77,6 @@
 .scroll-down-wrapper{
     position: absolute;
     bottom: 60px;
-
 }
 .scroll-down-icon{
     width: 30px;
@@ -126,7 +131,7 @@
     margin-top: 10px;
 }
 .innovation-section-wrapper{
-    min-height: 60vh;
+    min-height: 50vh;
 }
 .specific-innovation-wrapper{
     display: flex;
@@ -140,7 +145,7 @@
     overflow: hidden;
 }
 .specific-innovation-wrapper .card-image img{
-    height: 160px;
+    height: 50%;
     width: 100%;
     border-radius: 3px;
     transition: all 1.4s;
@@ -153,10 +158,16 @@
     font-weight: bolder;
     font-size: 18px;
 }
+.specific-innovation-wrapper a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .lets-collaborate-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     /* border-top: 1px solid black;
     border-right: 1px solid black;
@@ -173,4 +184,54 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
+/* responsiveness */
+@media screen and (max-width: 1360px){
+    .hero-section-wrapper{
+        flex-direction: column;
+    }
+    .myPicture .action-button{
+        position: absolute;
+        top: 96%;
+        left: 20%;
+    }
+    .hero-section2{
+        width: 100%;
+    }
+    .action-button-wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1015px){
+    .specific-innovation-wrapper{
+        flex-direction: column;
+    }
+    .specific-innovation-wrapper .card{
+        margin-top: 20px;
+        width: 70%;
+        
+    }
+    .specific-innovation-wrapper .card-image img{
+        height: 20%;
+    }
+    .lets-collaborate-wrapper{
+        margin-top: 20px;
+    }
+    .action-button-wrapper{
+        min-height: 30vh;
+    }
+    .specific-innovation-wrapper .card-description{
+        font-size: 20px;
+    }  
+}
+@media screen and (max-width: 750px) {
+    .hero-section2{
+        font-size: 40px;
+    }
+    .specific-projects-wrapper{
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+}

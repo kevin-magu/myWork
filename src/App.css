@@ -40,12 +40,14 @@ body{
   display: flex;
   font-weight: bold;
 }
-.navigation-wrapper ul li{
+.navigation-wrapper ul .link{
   margin-right: 40px;
   list-style: none;
   cursor: pointer;
+  text-decoration: none;
+  color: #1c1c1c;
 }
-.navigation-wrapper ul li:hover{
+.navigation-wrapper ul .link:hover{
   opacity: 70%;
 }
 
@@ -65,19 +67,20 @@ body{
 .get-in-touch-link .contacts p{
   font-weight: 400;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   /* margin-top: 10px; */
 }
+.nav-icon{
+  margin-right: 5px;
+}
+
 .get-in-touch-link .span-text:hover{
   opacity: 70%;
   cursor: pointer;
 }
 
-.hero-section-wrapper{
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .footer-wrapper{
   min-height: 30vh;
   display: flex;

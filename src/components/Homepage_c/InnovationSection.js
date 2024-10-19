@@ -19,8 +19,9 @@ function InnovationSection() {
               <p>AI is the next bitcoin. Yes, the next thing that will
                 hit the world with shock. Those who will survive the 
                 future are those who won't live in denial of having AI do most of their tasks.
-                <a href="">Read more</a>
+          
               </p>
+              <a href="">Read more</a>
             </div>
 
           </div>
@@ -33,9 +34,8 @@ function InnovationSection() {
             <div className='card-description'>
               <p>We were born to achieve something in this world.Right?
                 Why not be among those who'll make Kenya launch its first Rocket into orbit?
-                <a href="">Read more</a> 
-
               </p>
+              <a href="">Read more</a>
             </div>
           </div>
 
@@ -47,8 +47,9 @@ function InnovationSection() {
             <div className='card-description'>
               <p>Stay indoors? No. I like doing something for the world. Combating climate change is the best
                 field where you can learn earth science and make the world a better place at the same time.
-                <a href="">Read more</a>
+                
               </p>
+              <a href="">Read more</a>
             </div>
           </div>
 
