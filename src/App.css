@@ -49,6 +49,29 @@ body{
   opacity: 70%;
 }
 
+.get-in-touch-link .contacts{
+  width: 240px;
+  background-color: #1c1c1c;
+  color: #eeeeed;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  display: none;
+}
+.get-in-touch-link .contacts p{
+  font-weight: 400;
+  cursor: pointer;
+  /* margin-top: 10px; */
+}
+.get-in-touch-link .span-text:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+
 .hero-section-wrapper{
   min-height: 85vh;
   display: flex;
