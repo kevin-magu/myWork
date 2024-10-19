@@ -4,48 +4,12 @@
     margin: 0;
 }
 /*general elements*/
-.action-button{
-    width: fit-content;
-    height: 40px;
-    background-color: #1c1c1c;
-    border-radius: 100px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 25px 0 25px;
-    margin-right: 40px;
-    cursor: pointer;
-}
+
 .homepage-wrapper{
     display: flex;
     flex-direction: column;
 }
 
-.navigation-wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    color: #1c1c1c;
-    
-}
-.navigation-wrapper ul{
-    display: flex;
-    font-weight: bold;
-}
-.navigation-wrapper ul li{
-    margin-right: 40px;
-    list-style: none;
-}
-
-.hero-section-wrapper{
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .myPicture{
     width: 300px;
     height: 300px;
@@ -89,7 +53,7 @@
 .hero-section2{
     width: 50%;
     margin-left: 200px;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
@@ -135,9 +99,7 @@
     }
 }
 
-.projects-section-wrapper{
-    min-height: 60vh;
-}
+
 .section-title-wrapper{
     display: flex;
     align-items: center;
@@ -148,19 +110,17 @@
 .project-category-title{
     font-weight: bolder;
     font-size: 23px;
-    
+    margin-top: 40px;
 }
 .specific-projects-wrapper{
-    height: 100%;
+    min-height: 40vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center
     
 }
-.specific-project{
-    
-}
+
 .specific-project li{
     list-style: none;
     margin-top: 10px;
@@ -168,3 +128,49 @@
 .innovation-section-wrapper{
     min-height: 60vh;
 }
+.specific-innovation-wrapper{
+    display: flex;
+    min-height: 40vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.specific-innovation-wrapper .card{
+    width: 300px;
+    height: fit-content;
+    overflow: hidden;
+}
+.specific-innovation-wrapper .card-image img{
+    height: 160px;
+    width: 100%;
+    border-radius: 3px;
+    transition: all 1.4s;
+    cursor: pointer;
+}
+.specific-innovation-wrapper .card-image img:hover{
+    transform: scale(1.05);
+}
+.specific-innovation-wrapper .card-title{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.lets-collaborate-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black; */
+}
+.handshake-icon{
+    font-size: 50px;
+    transform: translateY(50px);
+}
+.action-button-wrapper{
+    min-height: 40vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

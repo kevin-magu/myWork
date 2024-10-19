@@ -8,5 +8,66 @@ body{
   background-color: #eeeeed;
   color: #1c1c1c;
 }
+.action-button{
+  width: fit-content;
+  height: 40px;
+  background-color: #1c1c1c;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px 0 25px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.action-button:hover{
+  background-color: white;
+  color: #1c1c1c;
+  border: 1px solid black;
+}
 
+.navigation-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: #1c1c1c;
+  
+}
+.navigation-wrapper ul{
+  display: flex;
+  font-weight: bold;
+}
+.navigation-wrapper ul li{
+  margin-right: 40px;
+  list-style: none;
+  cursor: pointer;
+}
+.navigation-wrapper ul li:hover{
+  opacity: 70%;
+}
+
+.hero-section-wrapper{
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wrapper{
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.footer-quote{
+  width: 50%;
+  margin-top: 30px;
+}
+.footer-copyright{
+  margin-top: 40px;
+  font-weight: bold;
+}
 

@@ -1,7 +1,8 @@
-import React from 'react'
-import ActionButton from '../General_c/ActionButton'
+import React, {useEffect} from 'react'
+import ActionButton from './ActionButton'
 
-function Navigation_c() {
+
+function Navbar() {
   return (
     <div>
         <nav className='navigation-wrapper'>
@@ -10,11 +11,14 @@ function Navigation_c() {
               <li>Home</li>
               <li>Projects</li>
               <li>Innovation</li>
-              <li>Get In Touch</li>
+              <li className='get-in-touch-link'>Get In Touch</li>
             </ul>
         </nav>
     </div>
+    
   )
+  
 }
 
-export default Navigation_c
+
+export default Navbar
