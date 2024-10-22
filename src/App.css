@@ -152,6 +152,18 @@ body{
   margin-top: 40px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 890px) {
+  .footer-quote{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .footer-quote{
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .navigation-wrapper ul{
     display: none;
@@ -161,6 +173,12 @@ body{
 @media screen and (max-width: 500px) {
   .page-top-button{
     color: yellow;
+  }
+  .footer-quote{
+    font-size: 13px;
+  }
+  .footer-copyright{
+    font-size: 14px;
   }
 }
 

@@ -257,6 +257,7 @@
     } 
     .specific-innovation-wrapper .card{
         width: 90%;
+        margin-top: 50px;
     }
     .nav-top-button{
         transform: scale(0.7);
