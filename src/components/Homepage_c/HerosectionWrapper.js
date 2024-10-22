@@ -9,7 +9,7 @@ function HerosectionWrapper() {
         <div className='hero-section1'>
             <div className='myPicture'>
               <div className='myNameWrapper'>
-                <div className='action-button'>Wanjau Kevin <MdWavingHand className='wave-icon'/> </div>
+                <div className='action-button'>Hello World <MdWavingHand className='wave-icon'/> </div>
               </div>
             </div>
         </div>
