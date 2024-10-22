@@ -1,5 +1,5 @@
-.App {
-  
+*:focus{
+  outline: none;
 }
 body{
   margin: 0;
@@ -20,10 +20,16 @@ body{
   padding: 0 25px 0 25px;
   cursor: pointer;
 }
+.action-button:focus{
+  outline: none;
+}
 .action-button:hover{
   background-color: white;
   color: #1c1c1c;
   border: 1px solid black;
+}
+.nav-top-button{
+  margin-right: 40px;
 }
 
 .navigation-wrapper{
@@ -165,6 +171,9 @@ body{
 @media screen and (max-width: 750px) {
   .navigation-wrapper ul{
     display: none;
+  }
+  .nav-top-button{
+    margin-right: 0;
   }
 }
 
