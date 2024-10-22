@@ -87,7 +87,7 @@ body{
 }
 .menu-bar .line, .line2{
   margin-top: 5px;
-  border-radius: 6px;
+  border-radius: 8px;
   
 }
 
@@ -182,6 +182,7 @@ body{
   }
   .colaborate-btn{
     font-size: 13px;
+    height: 32px;
   }
 }
 
