@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ActionButton({actionButtonConetent}) {
+function ActionButton({actionButtonConetent, className}) {
   return (
     <div>
-      <div className='action-button'>{actionButtonConetent}</div>
+      <div className={className}>{actionButtonConetent}</div>
     </div>
   )
 }

@@ -9,9 +9,9 @@ function LetsCollaborate() {
         <SectionTitles title ="Let's Collaborate"/>
         <FaHandshake className='handshake-icon'/>
         <div className='action-button-wrapper'>
-            <ActionButton actionButtonConetent="Email"/>
-            <ActionButton actionButtonConetent="Whatsapp"/>
-            <ActionButton actionButtonConetent="call"/>
+            <ActionButton actionButtonConetent="Email" className="action-button colaborate-btn"/>
+            <ActionButton actionButtonConetent="Whatsapp" className="action-button colaborate-btn"/>
+            <ActionButton actionButtonConetent="call" className="action-button colaborate-btn"/>
         </div>
     </div>
   )

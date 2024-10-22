@@ -49,7 +49,7 @@ function Navbar() {
             <span className='line2'></span>
           </div>
           
-            <div className='nav-top-button'><ActionButton actionButtonConetent="info.kevin.co.ke" /></div>
+            <div className='action-button nav-top-button'><ActionButton actionButtonConetent="info.kevin.co.ke" /></div>
             
             <ul>
               <Link className='link' to='/'>Home</Link>
