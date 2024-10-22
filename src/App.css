@@ -102,8 +102,6 @@ body{
   border-radius: 8px;
 }
 
-
-
 .scroll-down-wrapper{
   display: flex;
   justify-content: center;
@@ -179,6 +177,9 @@ body{
   }
   .footer-copyright{
     font-size: 14px;
+  }
+  .footer-wrapper{
+    min-height: 20vh;
   }
   .colaborate-btn{
     font-size: 13px;
