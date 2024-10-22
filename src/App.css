@@ -86,20 +86,20 @@ body{
   left: 10px;
 }
 .menu-bar .line, .line2{
-  margin-top: 5px;
-  border-radius: 8px;
-  
+  margin-top: 5px; 
 }
 
 .menu-bar .line1{
   height: 1.9px;
   width: 25px;
   background-color: #1c1c1c;
+  border-radius: 8px;
 }
 .menu-bar .line2{
   height: 1.9px;
   width: 20px;
   background-color: #1c1c1c;
+  border-radius: 8px;
 }
 
 
