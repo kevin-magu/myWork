@@ -7,6 +7,11 @@ import { FaEnvelope } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { FaHouse } from 'react-icons/fa6';
+import { FaTools } from 'react-icons/fa';
+import { FaBrain } from 'react-icons/fa';
+import { FaBookOpen } from 'react-icons/fa6';
+
 
 
 
@@ -52,13 +57,13 @@ function Navbar() {
             <div className='action-button nav-top-button'><ActionButton actionButtonConetent="info.kevin.co.ke" /></div>
             
             <ul>
-              <Link className='link' to='/'>Home</Link>
-              <Link className='link'>Projects</Link>
-              <Link className='link'>Innovation</Link>
-              <Link className='link'>Thoughts</Link>
+              <Link className='link' to='/'> <FaHouse className='navbar-icon'/> Home</Link>
+              <Link className='link'> <FaTools className='navbar-icon'/> Projects</Link>
+              <Link className='link'> <FaBrain className='navbar-icon'/> Innovation</Link>
+              <Link className='link'> <FaBookOpen className='navbar-icon'/> Thoughts</Link>
 
               <span className='get-in-touch-link'>
-                <span className='span-text'>Get In Touch </span>
+                <span className='span-text'> <FaPhone className='navbar-icon link-git'/> Get In Touch </span>
                 <div className='contacts'>
                   <p> <FaEnvelope className='nav-icon'/> Email: info.kevin.co.ke</p>
                   <p> <FaPhone className='nav-icon'/> Call : 0797692537</p>

@@ -51,7 +51,14 @@ body{
   cursor: pointer;
   text-decoration: none;
   color: #1c1c1c;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
+.navigation-wrapper .navbar-icon{
+  margin-right: 6px;
+}
+
 .navigation-wrapper ul .link:hover{
   opacity: 70%;
 }
@@ -173,11 +180,35 @@ body{
 
 @media screen and (max-width: 750px) {
   .navigation-wrapper ul{
-    display: none;
+    /* display: ; */
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    left: 0px;
+    top: 10%;
+    background-color: #1c1c1c; 
+    z-index: 100;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 400px;
+    padding: 3px;
+    width: 70%;
+    height: 80%;
   }
+  .navigation-wrapper ul .link,ul{
+    color: white;
+  }
+  .navigation-wrapper .link, .link-git{
+    margin-left: 60px;
+  }
+
   .nav-top-button{
     margin-right: 0;
   }
+
+
 }
 
 @media screen and (max-width: 500px) {
