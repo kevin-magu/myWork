@@ -55,6 +55,7 @@ function Navbar() {
               <Link className='link' to='/'>Home</Link>
               <Link className='link'>Projects</Link>
               <Link className='link'>Innovation</Link>
+              <Link className='link'>Thoughts</Link>
 
               <span className='get-in-touch-link'>
                 <span className='span-text'>Get In Touch </span>
