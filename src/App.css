@@ -169,6 +169,9 @@ body{
 }
 
 @media screen and (max-width: 500px) {
+  .hero-section2 .github-icon{
+    font-size: 60px;
+  }
   .page-top-button{
     color: yellow;
   }
