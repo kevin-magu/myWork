@@ -8,7 +8,9 @@ function HerosectionWrapper() {
     <div className='hero-section-wrapper'>
         <div className='hero-section1'>
             <div className='myPicture'>
-            <div className='action-button'>Wanjau Kevin <MdWavingHand className='wave-icon'/> </div>
+              <div className='myNameWrapper'>
+                <div className='action-button'>Wanjau Kevin <MdWavingHand className='wave-icon'/> </div>
+              </div>
             </div>
         </div>
         <div className='hero-section2'>
@@ -18,7 +20,7 @@ function HerosectionWrapper() {
             <span> <FaGithub className='github-icon'/> </span>
         </div>
 
-        <ScrollDown />
+       
     </div>
   )
 }

@@ -8,6 +8,7 @@
 .homepage-wrapper{
     display: flex;
     flex-direction: column;
+    min-height: 85vh;
 }
 
 .hero-section-wrapper{
@@ -74,36 +75,6 @@
     transform: scale(0.6);
     color: #1c1c1c;
 }
-.scroll-down-wrapper{
-    position: absolute;
-    bottom: 60px;
-}
-.scroll-down-icon{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 0.7px solid #1c1c1c;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation:  movedownAnimation 2.5s linear infinite 2s;
-    cursor: pointer;
-}
-.downArrow{
-    animation:  upDownAnimation 0.7s ease-in-out infinite;
-    
-}
-@keyframes upDownAnimation {
-    25%{
-        transform: translateY(8px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
 
 .section-title-wrapper{
     display: flex;
@@ -145,7 +116,7 @@
     overflow: hidden;
 }
 .specific-innovation-wrapper .card-image img{
-    height: 50%;
+    height: 150px;
     width: 100%;
     border-radius: 3px;
     transition: all 1.4s;
@@ -159,7 +130,7 @@
     font-size: 18px;
 }
 .specific-innovation-wrapper a{
-    color: red;
+    color: #1c1c1c;
     text-decoration: none;
     font-weight: bold;
 }
@@ -188,14 +159,22 @@
 @media screen and (max-width: 1360px){
     .hero-section-wrapper{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .myPicture .action-button{
         position: absolute;
         top: 96%;
         left: 20%;
     }
+    .myNameWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .hero-section2{
         width: 100%;
+        margin-top: 40px;
     }
     .action-button-wrapper{
         width: 100%;
@@ -231,7 +210,55 @@
     }
     .specific-projects-wrapper{
         flex-direction: column;
-        justify-content: left;
+    }
+    .project-title-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .specific-project{
+        margin-top: 20px;
+    }
+    .specific-project ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+    }
+    .innovation-section-wrapper{
+        margin-top: 40px;
+    }
+
+    .specific-innovation-wrapper .card-description{
+        font-size: 17px;
+    }  
+}
+@media screen and (max-width: 500px) {
+    .hero-section-wrapper{
+        min-height: 73vh;
+    }
+    .myPicture{
+        transform: scale(0.6);
+    }
+    .hero-section1{
+        transform: translateY(-30px);
+    }
+    .hero-section2{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    .myPicture .action-button{
+        left: 17%;
+    }
+    .section-title-wrapper{
+        font-size: 17px;
+    }
+    .specific-innovation-wrapper .card-description{
+        font-size: 13px;
+    } 
+    .specific-innovation-wrapper .card{
+        width: 90%;
+    }
+    .nav-top-button{
+        transform: scale(0.7);
     }
 }

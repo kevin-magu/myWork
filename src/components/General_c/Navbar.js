@@ -44,7 +44,13 @@ function Navbar() {
   return (
     <div>
         <nav className='navigation-wrapper'>
-            <ActionButton actionButtonConetent="info.kevin.co.ke" />
+          <div className='menu-bar'>
+            <span className='line1'></span>
+            <span className='line2'></span>
+          </div>
+          
+            <div className='nav-top-button'><ActionButton actionButtonConetent="info.kevin.co.ke" /></div>
+            
             <ul>
               <Link className='link' to='/'>Home</Link>
               <Link className='link'>Projects</Link>
