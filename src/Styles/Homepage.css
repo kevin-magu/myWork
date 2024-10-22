@@ -249,6 +249,9 @@
     .myPicture .action-button{
         left: 20%;
     }
+    .project-category-title{
+        font-size: 19px;
+    }
     .section-title-wrapper{
         font-size: 17px;
     }
