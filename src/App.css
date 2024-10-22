@@ -90,22 +90,25 @@ body{
   flex-direction: column;
   position: absolute;
   left: 10px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 20px;
 }
-.menu-bar .line, .line2{
-  margin-top: 5px; 
+
+.menu-bar span{
+  height: 2px;
+  width: 25px;
+  border-radius: 8px;
 }
 
 .menu-bar .line1{
-  height: 2px;
-  width: 25px;
   background-color: #1c1c1c;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 .menu-bar .line2{
-  height: 2px;
-  width: 20px;
+  width: 18px;
   background-color: #1c1c1c;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .scroll-down-wrapper{
