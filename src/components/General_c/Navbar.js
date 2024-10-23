@@ -14,6 +14,7 @@ function Navbar() {
     const searchResults = document.querySelector('.search-results');
     const projectLlink = document.querySelector('.projects-link');
     const innovationLink = document.querySelector('.innovation-link');
+    const resultCloseButton = document.querySelector('.result-close-button')
 
     // Handling contact display
     const handleGetInTouchClick = () => {
@@ -33,6 +34,10 @@ function Navbar() {
     function handleProjectInnovationClick(){
       searchResults.style.display='flex'
     }
+    function handleSearchResultDivClosing(){
+      searchResults.style.display='none'
+    }
+    resultCloseButton.addEventListener('click', handleSearchResultDivClosing)
     innovationLink.addEventListener('click', handleProjectInnovationClick)
     projectLlink.addEventListener('click', handleProjectInnovationClick)
 
