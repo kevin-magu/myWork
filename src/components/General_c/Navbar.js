@@ -51,8 +51,9 @@ function Navbar() {
 
   //projects , innovation clicking
   function handleProjectInnovationClick(){
-    searchResults.style.display='block'
+    searchResults.style.display='block';
   }
+  
   innovationLink.addEventListener('click', handleProjectInnovationClick);
   projectsLink.addEventListener('click', handleProjectInnovationClick);
 
