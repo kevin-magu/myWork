@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import ActionButton from './ActionButton'
 import {Link,useNaviage} from "react-router-dom"
+import { FaChevronDown } from 'react-icons/fa'
 
 //icons from fa imorts
 import { FaEnvelope } from 'react-icons/fa';
@@ -58,12 +59,12 @@ function Navbar() {
             
             <ul>
               <Link className='link' to='/'> <FaHouse className='navbar-icon'/> Home</Link>
-              <Link className='link'> <FaTools className='navbar-icon'/> Projects</Link>
-              <Link className='link'> <FaBrain className='navbar-icon'/> Innovation</Link>
+              <Link className='link'> <FaTools className='navbar-icon'/> Projects <FaChevronDown className='nav-dropdown'/> </Link>
+              <Link className='link'> <FaBrain className='navbar-icon'/> Innovation <FaChevronDown className='nav-dropdown'/> </Link>
               <Link className='link'> <FaBookOpen className='navbar-icon'/> Thoughts</Link>
 
               <span className='get-in-touch-link'>
-                <span className='span-text'> <FaPhone className='navbar-icon'/> Get In Touch </span>
+                <span className='span-text'> <FaPhone className='navbar-icon'/> Get In Touch <FaChevronDown className='nav-dropdown'/> </span>
                 <div className='contacts'>
                   <p> <FaEnvelope className='nav-icon'/> Email: info.kevin.co.ke</p>
                   <p> <FaPhone className='nav-icon'/> Call : 0797692537</p>
