@@ -12,6 +12,8 @@ function Navbar() {
   useEffect(() => {
     const contacts = document.querySelector('.contacts');
     const searchResults = document.querySelector('.search-results');
+    const projectLlink = document.querySelector('.projects-link');
+    const innovationLink = document.querySelector('.innovation-link');
 
     // Handling contact display
     const handleGetInTouchClick = () => {
@@ -27,6 +29,12 @@ function Navbar() {
     };
 
     document.addEventListener('click', handleDocumentClick);
+
+    function handleProjectInnovationClick(){
+      searchResults.style.display='flex'
+    }
+    innovationLink.addEventListener('click', handleProjectInnovationClick)
+    projectLlink.addEventListener('click', handleProjectInnovationClick)
 
     // Clean-up function
     return () => {
