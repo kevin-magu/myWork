@@ -41,8 +41,6 @@ function Navbar() {
     document?.removeEventListener('click', handleContactClosing)
   };
 
-  
-
   }, []);
  
 
