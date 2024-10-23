@@ -47,12 +47,14 @@ function Navbar() {
   return (
     <div>
         <nav className='navigation-wrapper'>
+        <div className='action-button nav-top-button'><ActionButton actionButtonConetent="info.kevin.co.ke" /></div>
+          
           <div className='menu-bar'>
             <span className='line1'></span>
             <span className='line2'></span>
           </div>
           
-            <div className='action-button nav-top-button'><ActionButton actionButtonConetent="info.kevin.co.ke" /></div>
+            
             
             <ul>
               <Link className='link' to='/'> <FaHouse className='navbar-icon'/> Home</Link>
@@ -61,15 +63,15 @@ function Navbar() {
               <Link className='link'> <FaBookOpen className='navbar-icon'/> Thoughts</Link>
 
               <span className='get-in-touch-link'>
-                <span className='span-text'> <FaPhone className='navbar-icon link-git'/> Get In Touch </span>
+                <span className='span-text'> <FaPhone className='navbar-icon'/> Get In Touch </span>
                 <div className='contacts'>
                   <p> <FaEnvelope className='nav-icon'/> Email: info.kevin.co.ke</p>
                   <p> <FaPhone className='nav-icon'/> Call : 0797692537</p>
                   <p> <FaLinkedin className='nav-icon'/> Linkedin</p>
                 </div>
               </span>
-
             </ul>
+        
         </nav>
     </div>
     
