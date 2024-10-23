@@ -101,6 +101,9 @@ body{
   justify-content: space-evenly;
   height: 20px;
 }
+.navigation-wrapper .nav-dropdown{
+  display: none;
+}
 
 .menu-bar span{
   height: 3px;
@@ -189,21 +192,26 @@ body{
     top: 10%;
     background-color: #1c1c1c; 
     z-index: 100;
-    border-radius: 3px;
+    border-radius: 2px;
     font-size: 14px;
     font-weight: 400;
     min-height: 400px;
-    width: 70%;
+    width: 300px;
     min-height: 80%;
-    padding: 10px;
   }
+
   .navigation-wrapper ul .link{
     justify-content: flex-start;
   }
+
   .navigation-wrapper .nav-dropdown{
     font-size: 20px;
     position: absolute;
-    right: 10px;
+    left: 150px;
+    display: block;
+  }
+  .navigation-wrapper ul .nav-icon{
+    margin-left: 40px;
   }
   
   .navigation-wrapper ul .link, .navigation-wrapper ul{
@@ -213,9 +221,10 @@ body{
   .navigation-wrapper ul .link, .navigation-wrapper .get-in-touch-link{
     position: relative;
     /* background-color: rgb(255, 12, 12); */
-    width: 100%;
-    margin-left: 0;
+    width: 150px;
+    margin-left: 70px;
     display: flex;
+    justify-content: s;
 }
 
 .navigation-wrapper .get-in-touch-link{
