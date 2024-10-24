@@ -3,17 +3,13 @@ import ActionButton from './ActionButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronDown, FaEnvelope, FaWhatsapp, FaPhone, FaLinkedin, FaHome, FaTools, FaBrain, FaBookOpen } from 'react-icons/fa';
 
-// Innovation images
-import aiCardimage from '../../images/ai-card-image.jpg';
-import spaceCardImage from '../../images/space-card-image2.jpg';
-import climateChangeImage from '../../images/other-card-image.jpg';
 
 function Navbar() {
   useEffect(() => {
     const contacts = document.querySelector('.contacts');
     const getInTouchLink = document.querySelector('.get-in-touch-link');
-
-
+    const menuBar = document.querySelector('.menu-bar');
+    const mobileNavbar = document.querySelector('.mobile-navbar');
 
     // Handling contact display
     const handleGetInTouchClick = () => {
@@ -31,6 +27,12 @@ function Navbar() {
 
     document.addEventListener('click', handleDocumentClick);
 
+    //opening and closing of menu bar and nav bar
+    function openNavBar(){
+
+    }
+
+    menuBar.addEventListener('click', openNavBar)
 
     // Clean-up function
     return () => {
@@ -50,7 +52,7 @@ function Navbar() {
           <span className="line2"></span>
         </div>
 
-        <ul>
+        <ul className='mobile-navbar'>
           <Link className="link" to="/">
             <FaHome className="navbar-icon" /> Home
           </Link>
