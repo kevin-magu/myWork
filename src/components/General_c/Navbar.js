@@ -35,15 +35,20 @@ function Navbar() {
       searchResults.style.display='flex'
     }
     function handleSearchResultDivClosing(){
-      searchResults.style.display='none'
+      if(searchResults.style.display == 'flex'){
+        searchResults.style.display='none'
+      }
     }
+
     resultCloseButton.addEventListener('click', handleSearchResultDivClosing)
     innovationLink.addEventListener('click', handleProjectInnovationClick)
     projectLlink.addEventListener('click', handleProjectInnovationClick)
+    document.addEventListener('click', handleSearchResultDivClosing);
 
     // Clean-up function
     return () => {
       document.removeEventListener('click', handleDocumentClick);
+      // document.removeEventListener('click', handleSearchResultDivClosing)
     };
   }, []);
 
