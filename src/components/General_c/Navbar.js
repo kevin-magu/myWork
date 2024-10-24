@@ -11,15 +11,15 @@ import climateChangeImage from '../../images/other-card-image.jpg';
 function Navbar() {
   useEffect(() => {
     const contacts = document.querySelector('.contacts');
-    const searchResults = document.querySelector('.search-results');
-    const projectLlink = document.querySelector('.projects-link');
-    const innovationLink = document.querySelector('.innovation-link');
-    const resultCloseButton = document.querySelector('.result-close-button')
+    const getInTouchLink = document.querySelector('.get-in-touch-link');
+
+
 
     // Handling contact display
     const handleGetInTouchClick = () => {
       contacts.style.display = "flex";
     };
+    getInTouchLink.addEventListener('click', handleGetInTouchClick)
 
     // Close contacts when clicking outside
     const handleDocumentClick = (event) => {
@@ -31,24 +31,10 @@ function Navbar() {
 
     document.addEventListener('click', handleDocumentClick);
 
-    function handleProjectInnovationClick(){
-      searchResults.style.display='flex'
-    }
-    function handleSearchResultDivClosing(){
-      if(searchResults.style.display == 'flex'){
-        searchResults.style.display='none'
-      }
-    }
-
-    resultCloseButton.addEventListener('click', handleSearchResultDivClosing)
-    innovationLink.addEventListener('click', handleProjectInnovationClick)
-    projectLlink.addEventListener('click', handleProjectInnovationClick)
-    document.addEventListener('click', handleSearchResultDivClosing);
 
     // Clean-up function
     return () => {
       document.removeEventListener('click', handleDocumentClick);
-      // document.removeEventListener('click', handleSearchResultDivClosing)
     };
   }, []);
 
@@ -69,18 +55,18 @@ function Navbar() {
             <FaHome className="navbar-icon" /> Home
           </Link>
           <Link className="link projects-link">
-            <FaTools className="navbar-icon" /> Projects <FaChevronDown className="nav-dropdown" />
+            <FaTools className="navbar-icon"/> Projects 
           </Link>
           <Link className="link innovation-link">
-            <FaBrain className="navbar-icon" /> Innovation <FaChevronDown className="nav-dropdown" />
+            <FaBrain className="navbar-icon" /> Innovation 
           </Link>
           <Link className="link">
             <FaBookOpen className="navbar-icon" /> Thoughts
           </Link>
 
-          <span className="get-in-touch-link" onClick={() => document.querySelector('.contacts').style.display = 'flex'}>
+          <span className="get-in-touch-link">
             <span className="span-text">
-              <FaPhone className="navbar-icon" /> Get In Touch <FaChevronDown className="nav-dropdown" />
+              <FaPhone className="navbar-icon" /> Get In Touch 
             </span>
             <div className="contacts">
               <p>
@@ -95,10 +81,7 @@ function Navbar() {
             </div>
           </span>
 
-          <div className="search-results-wrapper"></div>
-          <div className="search-results">
-            <button className="result-close-button">Close</button>
-          </div>
+          
         </ul>
       </nav>
     </div>
