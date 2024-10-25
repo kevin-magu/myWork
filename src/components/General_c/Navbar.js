@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ActionButton from './ActionButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronDown, FaEnvelope, FaWhatsapp, FaPhone, FaLinkedin, FaHome, FaTools, FaBrain, FaBookOpen } from 'react-icons/fa';
@@ -27,18 +27,17 @@ function Navbar() {
 
     document.addEventListener('click', handleDocumentClick);
 
-    //opening and closing of menu bar and nav bar
-    function openNavBar(){
-
-    }
-
-    menuBar.addEventListener('click', openNavBar)
-
     // Clean-up function
     return () => {
       document.removeEventListener('click', handleDocumentClick);
     };
   }, []);
+
+//opening and closing of menu bar and nav bar
+  const [navIsOpen, setNavIsOPen] = useState(false);
+  function toggleNavBar(){
+    setNavIsOPen((prev) => !prev);
+  };
 
   return (
     <div>
@@ -52,7 +51,9 @@ function Navbar() {
           <span className="line2"></span>
         </div>
 
-        <ul className='mobile-navbar'>
+        <ul className='mobile-navbar'
+          style={{display:navIsOpen? 'flex': 'home'}}
+        >
           <Link className="link" to="/">
             <FaHome className="navbar-icon" /> Home
           </Link>
