@@ -35,9 +35,7 @@ function Navbar() {
 
 //opening and closing of menu bar and nav bar
   const [navIsOpen, setNavIsOPen] = useState(false);
-  function toggleNavBar(){
-    setNavIsOPen((prev) => !prev);
-  };
+  ;
 
   return (
     <div>
@@ -46,13 +44,15 @@ function Navbar() {
           <ActionButton actionButtonContent="info.kevin.co.ke" />
         </div>
 
-        <div className="menu-bar">
+        <div className="menu-bar"
+          onClick={() => setNavIsOPen((prev) => !prev)}
+        >
           <span className="line1"></span>
           <span className="line2"></span>
         </div>
 
         <ul className='mobile-navbar'
-          style={{display:navIsOpen? 'flex': 'home'}}
+          style={{display:navIsOpen? 'flex': 'none'}}
         >
           <Link className="link" to="/">
             <FaHome className="navbar-icon" /> Home
