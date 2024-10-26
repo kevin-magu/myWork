@@ -247,14 +247,15 @@ body{
     border-radius: 8px;
 }
  
-  .menu-bar .line1{
-    transform: rotate(45deg)  translateY(5px);;
+  /* .menu-bar .line1{
+    transform: rotate(45deg)  translateY(5px);
     
-}
-  .menu-bar .line2{
+} */
+ 
+  /* .menu-bar .line2{
     width: 25px;
     transform: rotate(-45deg) translateY(-5px);
-}
+} */
   
 
 .navigation-wrapper .link, .link-git{

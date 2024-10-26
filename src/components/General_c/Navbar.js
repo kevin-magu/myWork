@@ -41,9 +41,7 @@ const menuBar = document.querySelector('.menu-bar');
 const mobileNavbar = document.querySelector('.mobile-navbar');
 const Links = document.querySelector('.link')
 const [navIsOpen, setNavIsOPen] = useState(false);
-function menuBarReturnToNormal(){
-  menuBar.style.backgroundColor = 'red'
-}
+
 
   
  
@@ -57,10 +55,11 @@ function menuBarReturnToNormal(){
 
         <div className="menu-bar"
           onClick={() => setNavIsOPen((prev) => !prev)}
+         
         >
-          <span className="line1"></span>
-          <span className="line2"></span>
-        </div>
+          <span className="line1"  style={{transform : navIsOpen? 'rotate(45deg) translateY(5px)' : 'rotate(0deg) translateY(0px)'}}></span>
+          <span className="line2" style={{transform: navIsOpen? 'rotate(-45deg) translateY(-5px)' : 'rotate(0deg) translateY(0px)'}}></span>
+        </div> 
 
         <ul className='mobile-navbar'
           style={{width : navIsOpen? '200px': '0px'}}
