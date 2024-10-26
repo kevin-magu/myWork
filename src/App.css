@@ -185,7 +185,7 @@ body{
 
 @media screen and (max-width: 750px) {
   .navigation-wrapper ul{
-    /* display: ; */
+    /* display: ; be3535*/
     flex-direction: column;
     position: absolute;
     justify-content: space-evenly;
@@ -196,8 +196,9 @@ body{
     z-index: 100;
     font-size: 14px;
     font-weight: 400;
-    width: 200px;
+    width: 0px;
     height: 80vh;
+    
   }
 
   .navigation-wrapper ul .link{
@@ -230,6 +231,7 @@ body{
 .navigation-wrapper .get-in-touch-link{
   justify-content: flex-start;
 }
+
 .navigation-wrapper .get-in-touch-link .span-text{
   width: 100%;
   display: flex;

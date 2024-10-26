@@ -8,8 +8,8 @@ function Navbar() {
   useEffect(() => {
     const contacts = document.querySelector('.contacts');
     const getInTouchLink = document.querySelector('.get-in-touch-link');
-    const menuBar = document.querySelector('.menu-bar');
-    const mobileNavbar = document.querySelector('.mobile-navbar');
+    
+    
 
     // Handling contact display
     const handleGetInTouchClick = () => {
@@ -25,6 +25,7 @@ function Navbar() {
       }
     };
 
+
     document.addEventListener('click', handleDocumentClick);
 
     // Clean-up function
@@ -34,8 +35,18 @@ function Navbar() {
   }, []);
 
 //opening and closing of menu bar and nav bar
-  const [navIsOpen, setNavIsOPen] = useState(false);
-  ;
+//const screenWindow = window.addEventListener('resize')
+
+const menuBar = document.querySelector('.menu-bar');
+const mobileNavbar = document.querySelector('.mobile-navbar');
+const Links = document.querySelector('.link')
+const [navIsOpen, setNavIsOPen] = useState(false);
+function menuBarReturnToNormal(){
+  menuBar.style.backgroundColor = 'red'
+}
+
+  
+ 
 
   return (
     <div>
@@ -52,22 +63,22 @@ function Navbar() {
         </div>
 
         <ul className='mobile-navbar'
-          style={{display:navIsOpen? 'flex': 'none'}}
+          style={{width : navIsOpen? '200px': '0px'}}
         >
-          <Link className="link" to="/">
+          <Link className="link" to="/" style={{display : navIsOpen? 'flex': 'none'}}>
             <FaHome className="navbar-icon" /> Home
           </Link>
-          <Link className="link projects-link">
+          <Link className="link projects-link" style={{display : navIsOpen? 'flex': 'none'}}>
             <FaTools className="navbar-icon"/> Projects 
           </Link>
-          <Link className="link innovation-link">
+          <Link className="link innovation-link" style={{display : navIsOpen? 'flex': 'none'}}>
             <FaBrain className="navbar-icon" /> Innovation 
           </Link>
-          <Link className="link">
+          <Link className="link" style={{display : navIsOpen? 'flex': 'none'}}>
             <FaBookOpen className="navbar-icon" /> Thoughts
           </Link>
 
-          <span className="get-in-touch-link">
+          <span className="get-in-touch-link" style={{display : navIsOpen? 'flex': 'none'}}>
             <span className="span-text">
               <FaPhone className="navbar-icon" /> Get In Touch 
             </span>
