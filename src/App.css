@@ -119,11 +119,13 @@ body{
 
 .menu-bar .line1{
   background-color: #1c1c1c;
+  transition: 0.3s ease-in-out;
   /* border-radius: 8px; */
 }
 .menu-bar .line2{
   width: 18px;
   background-color: #1c1c1c;
+  transition: 0.3s ease-in-out;
   /* border-radius: 8px; */
 }
 

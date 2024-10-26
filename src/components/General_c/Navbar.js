@@ -58,7 +58,9 @@ const [navIsOpen, setNavIsOPen] = useState(false);
          
         >
           <span className="line1"  style={{transform : navIsOpen? 'rotate(45deg) translateY(5px)' : 'rotate(0deg) translateY(0px)'}}></span>
-          <span className="line2" style={{transform: navIsOpen? 'rotate(-45deg) translateY(-5px)' : 'rotate(0deg) translateY(0px)'}}></span>
+          <span className="line2" style={{transform: navIsOpen? 'rotate(-45deg) translateY(-5px)' : 'rotate(0deg) translateY(0px)', 
+            width : navIsOpen? '25px' : ''
+          }}></span>
         </div> 
 
         <ul className='mobile-navbar'
