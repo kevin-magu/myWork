@@ -14,6 +14,7 @@ function HerosectionWrapper() {
             </div>
         </div>
         <div className='hero-section2'>
+            <span className='under-maintenance'>website is under maintenance</span>
             <p>Web Development, Design</p>
             <p>and Business Software</p>
             <p>Solutions .</p>

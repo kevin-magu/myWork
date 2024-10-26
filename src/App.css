@@ -1,6 +1,10 @@
 *:focus{
   outline: none;
 }
+.under-maintenance{
+  font-size: 13px;
+  color: red;
+}
 body{
   margin: 0;
   padding: 0;
