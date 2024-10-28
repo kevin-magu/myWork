@@ -202,11 +202,13 @@ body{
     font-weight: 400;
     width: 0px;
     height: 80vh;
+    color: #eeeeed;
+   
   }
 
   .navigation-wrapper ul .link{
     justify-content: flex-start;
-    
+    color: #eeeeed;
   }
   
 
@@ -226,9 +228,7 @@ body{
     /* background-color: rgb(255, 12, 12); */
     width: 150px;
     margin-left: 50px;
-    display: flex;
-    justify-content: s;
-    color: purple;
+    display: none;
 }
 
 .navigation-wrapper .get-in-touch-link{

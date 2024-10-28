@@ -201,10 +201,15 @@
         font-size: 20px;
     }  
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 890px) {
+    .myPicture{
+        transform: scale(0.8);
+    }
     .hero-section2{
         font-size: 40px;
     }
+}
+@media screen and (max-width: 750px) {
     .specific-projects-wrapper{
         flex-direction: column;
     }

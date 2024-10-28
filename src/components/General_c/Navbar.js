@@ -47,8 +47,11 @@ function Navbar() {
         setNavIsOpen(false)
       }
     }
+
     window.addEventListener('resize', changeNavOpenStatus)
 
+    
+      
     
 
     // Cleanup listeners on unmount
@@ -92,25 +95,25 @@ function Navbar() {
         }}
       
       >
-        <Link className="link" to="/" ref={navLink}>
+        <Link className="link" to="/" style={{display : navIsOpen? 'flex' : ''}}>
           <FaHome className="navbar-icon" /> Home
         </Link>
-        <Link className="link projects-link" ref={navLink}>
+        <Link className="link projects-link" style={{display : navIsOpen? 'flex' : ''}}>
           <FaTools className="navbar-icon"/> Projects 
         </Link>
-        <Link className="link innovation-link" ref={navLink}>
+        <Link className="link innovation-link" style={{display : navIsOpen? 'flex' : ''}}>
           <FaBrain className="navbar-icon" /> Innovation 
         </Link>
-        <Link className="link" ref={navLink}>
+        <Link className="link" style={{display : navIsOpen? 'flex' : ''}}>
           <FaBookOpen className="navbar-icon" /> Thoughts
         </Link>
 
         <span
           ref={getInTouchLinkRef}
           className="get-in-touch-link"
-          
+          style={{display : navIsOpen? 'flex' : ''}}
         >
-          <span className="span-text">
+          <span className="span-text" >
             <FaPhone className="navbar-icon" /> Get In Touch 
           </span>
           <div ref={contactsRef} className="contacts">
