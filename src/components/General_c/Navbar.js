@@ -2,10 +2,12 @@ import React, { useEffect, useState, useRef } from 'react';
 import ActionButton from './ActionButton';
 import { Link } from 'react-router-dom';
 import { FaChevronDown, FaEnvelope, FaWhatsapp, FaPhone, FaLinkedin, FaHome, FaTools, FaBrain, FaBookOpen } from 'react-icons/fa';
+import { SiTrueup } from 'react-icons/si';
 
 function Navbar() {
-  const [navIsOpen, setNavIsOpen] = useState(false); // Ensure `useState` is imported and used correctly
-  
+  // Ensure `useState` is imported and used correctly
+  const [navIsOpen, setNavIsOpen] = useState(false)
+ 
   // Refs for DOM elements
   const contactsRef = useRef(null);
   const getInTouchLinkRef = useRef(null);
@@ -19,8 +21,8 @@ function Navbar() {
       }
     };
 
-    // Close contacts when clicking outside
-    const handleDocumentClick = (event) => {
+  // Close contacts when clicking outside
+  const handleDocumentClick = (event) => {
       if (
         contactsRef.current &&
         getInTouchLinkRef.current &&
@@ -34,6 +36,15 @@ function Navbar() {
     // Add event listeners
     getInTouchLinkRef.current?.addEventListener('click', handleGetInTouchClick);
     document.addEventListener('click', handleDocumentClick);
+    
+   window.addEventListener('resize', function resizeAction(){
+    const windowSize = window.innerWidth;
+    
+      if(windowSize > 750){
+        console.log("wisnow is now larger than 750 px")
+        setNavIsOpen(false)
+      }
+    })
 
     // Cleanup listeners on unmount
     return () => {
@@ -41,6 +52,7 @@ function Navbar() {
       document.removeEventListener('click', handleDocumentClick);
     };
   }, []);
+  
 
   return (
     <nav className="navigation-wrapper">
@@ -67,30 +79,30 @@ function Navbar() {
       <ul
         ref={mobileNavbarRef}
         className="mobile-navbar"
-        style={{ width: navIsOpen ? '200px' : '0px' }}
+      
       >
-        <Link className="link" to="/" style={{ display: navIsOpen ? 'flex' : 'none' }}>
+        <Link className="link" to="/" >
           <FaHome className="navbar-icon" /> Home
         </Link>
-        <Link className="link projects-link" style={{ display: navIsOpen ? 'flex' : 'none' }}>
+        <Link className="link projects-link" >
           <FaTools className="navbar-icon"/> Projects 
         </Link>
-        <Link className="link innovation-link" style={{ display: navIsOpen ? 'flex' : 'none' }}>
+        <Link className="link innovation-link" >
           <FaBrain className="navbar-icon" /> Innovation 
         </Link>
-        <Link className="link" style={{ display: navIsOpen ? 'flex' : 'none' }}>
+        <Link className="link" >
           <FaBookOpen className="navbar-icon" /> Thoughts
         </Link>
 
         <span
           ref={getInTouchLinkRef}
           className="get-in-touch-link"
-          style={{ display: navIsOpen ? 'flex' : 'none' }}
+          
         >
           <span className="span-text">
             <FaPhone className="navbar-icon" /> Get In Touch 
           </span>
-          <div ref={contactsRef} className="contacts" style={{ display: 'none' }}>
+          <div ref={contactsRef} className="contacts">
             <p>
               <FaEnvelope className="nav-icon" /> Email: info.kevin.co.ke
             </p>
