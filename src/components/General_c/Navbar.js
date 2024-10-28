@@ -8,10 +8,12 @@ function Navbar() {
   // Ensure `useState` is imported and used correctly
   const [navIsOpen, setNavIsOpen] = useState(false)
  
+ 
   // Refs for DOM elements
   const contactsRef = useRef(null);
   const getInTouchLinkRef = useRef(null);
   const mobileNavbarRef = useRef(null);
+  const navLink = useRef(null);
 
   useEffect(() => {
     // Toggle contacts display
@@ -37,19 +39,23 @@ function Navbar() {
     getInTouchLinkRef.current?.addEventListener('click', handleGetInTouchClick);
     document.addEventListener('click', handleDocumentClick);
     
-   window.addEventListener('resize', function resizeAction(){
-    const windowSize = window.innerWidth;
+    //screen resize
     
-      if(windowSize > 750){
-        console.log("wisnow is now larger than 750 px")
+    function changeNavOpenStatus(){
+      const windowWidh = window.innerWidth;
+      if(windowWidh> 890){
         setNavIsOpen(false)
       }
-    })
+    }
+    window.addEventListener('resize', changeNavOpenStatus)
+
+    
 
     // Cleanup listeners on unmount
     return () => {
       getInTouchLinkRef.current?.removeEventListener('click', handleGetInTouchClick);
       document.removeEventListener('click', handleDocumentClick);
+      window.removeEventListener('resize', changeNavOpenStatus)
     };
   }, []);
   
@@ -60,7 +66,7 @@ function Navbar() {
         <ActionButton actionButtonContent="info.kevin.co.ke" />
       </div>
 
-      <div className="menu-bar" onClick={() => setNavIsOpen((prev) => !prev)}>
+      <div className="menu-bar" onClick={() => setNavIsOpen((prev) => !prev )}>
         <span
           className="line1"
           style={{
@@ -79,18 +85,23 @@ function Navbar() {
       <ul
         ref={mobileNavbarRef}
         className="mobile-navbar"
+        style ={{
+         width : navIsOpen? '200px' : '',
+         display : navIsOpen? 'flex': '',
+        transition: navIsOpen? 'width 0.3s ease' : '' // Smooth transition
+        }}
       
       >
-        <Link className="link" to="/" >
+        <Link className="link" to="/" ref={navLink}>
           <FaHome className="navbar-icon" /> Home
         </Link>
-        <Link className="link projects-link" >
+        <Link className="link projects-link" ref={navLink}>
           <FaTools className="navbar-icon"/> Projects 
         </Link>
-        <Link className="link innovation-link" >
+        <Link className="link innovation-link" ref={navLink}>
           <FaBrain className="navbar-icon" /> Innovation 
         </Link>
-        <Link className="link" >
+        <Link className="link" ref={navLink}>
           <FaBookOpen className="navbar-icon" /> Thoughts
         </Link>
 

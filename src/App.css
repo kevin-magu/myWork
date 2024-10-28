@@ -37,7 +37,6 @@ body{
 }
 
 .navigation-wrapper{
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +48,6 @@ body{
 .navigation-wrapper ul{
   display: flex;
   font-weight: bold;
-  position: relative;
 }
 .navigation-wrapper ul .link{
   margin-right: 40px;
@@ -112,9 +110,7 @@ body{
 }
 
 
-.menu-bar span{.navigation-wrapper .nav-dropdown{
-  display: none;
-}
+.menu-bar span{
   height: 3px;
   width: 25px;
   border-radius: 8px;
@@ -204,13 +200,15 @@ body{
     z-index: 100;
     font-size: 14px;
     font-weight: 400;
-    width: 200px;
+    width: 0px;
     height: 80vh;
   }
 
   .navigation-wrapper ul .link{
     justify-content: flex-start;
+    
   }
+  
 
   .navigation-wrapper .nav-dropdown{
     font-size: 20px;
@@ -222,9 +220,6 @@ body{
     margin-left: 40px;
   }
   
-  .navigation-wrapper ul .link, .navigation-wrapper ul{
-    color: white;
-  }
 
   .navigation-wrapper ul .link, .navigation-wrapper .get-in-touch-link{
     position: relative;
@@ -233,6 +228,7 @@ body{
     margin-left: 50px;
     display: flex;
     justify-content: s;
+    color: purple;
 }
 
 .navigation-wrapper .get-in-touch-link{
