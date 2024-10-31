@@ -203,7 +203,7 @@ body{
     width: 0px;
     height: 80vh;
     color: #eeeeed;
-   
+    transition: width 0.3s ease-in-out;
   }
 
   .navigation-wrapper ul .link{
@@ -229,6 +229,7 @@ body{
     width: 150px;
     margin-left: 50px;
     display: none;
+
 }
 
 .navigation-wrapper .get-in-touch-link{
@@ -245,7 +246,7 @@ body{
   cursor: pointer;
 }
 .menu-bar span{
-    height: 3px;
+    height: 2px;
     width: 25px;
     border-radius: 8px;
 }

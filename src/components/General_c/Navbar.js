@@ -73,7 +73,7 @@ function Navbar() {
         <span
           className="line1"
           style={{
-            transform: navIsOpen ? 'rotate(45deg) translateY(5px)' : 'rotate(0deg) translateY(0px)',
+            transform: navIsOpen ? 'rotate(45deg) translateY(6px)' : 'rotate(0deg) translateY(0px)',
           }}
         ></span>
         <span
@@ -91,7 +91,7 @@ function Navbar() {
         style ={{
          width : navIsOpen? '200px' : '',
          display : navIsOpen? 'flex': '',
-        transition: navIsOpen? 'width 0.3s ease' : '' // Smooth transition
+        transition: navIsOpen? 'width 0.3s ease-in-out' : '' // Smooth transition
         }}
       
       >
